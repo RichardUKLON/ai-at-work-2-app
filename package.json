@@ -1,0 +1,32 @@
+{
+  "name": "ai-at-work-2-agent-that-acted",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI at Work 2: The Agent That Acted — a scenario-driven workplace AI-agent literacy game.",
+  "scripts": {
+    "clear-cache": "rm -rf node_modules/.vite",
+    "dev": "bun run clear-cache && NODE_ENV=development bun run --hot server.ts",
+    "build": "bun run clear-cache && vite build",
+    "prod": "bun run build && NODE_ENV=production bun run server.ts",
+    "preview": "bun run vite preview"
+  },
+  "dependencies": {
+    "hono": "^4.10.0",
+    "lucide-react": "^0.400.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}

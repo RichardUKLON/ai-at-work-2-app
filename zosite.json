@@ -1,0 +1,15 @@
+{
+  "name": "ai-at-work-2-app",
+  "local_port": 51993,
+  "entrypoint": "bun run dev",
+  "publish": {
+    "label": "ai-at-work-2-app",
+    "type": "http",
+    "entrypoint": "bun run prod",
+    "published_port": 57638,
+    "env": {
+      "NODE_ENV": "production",
+      "ZO_CLIENT_IDENTITY_TOKEN": "none"
+    }
+  }
+}
